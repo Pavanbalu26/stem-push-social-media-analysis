@@ -70,7 +70,8 @@ time.sleep(5)
 
 # Enter Twitter password
 password = WebDriverWait(driver, 15).until(EC.element_to_be_clickable((By.XPATH,"//input[@name='password']")))
-password.send_keys('Rakul@123;;')
+input_password = input()
+password.send_keys(input_password)
 password.send_keys(Keys.ENTER)
 time.sleep(30)
 
